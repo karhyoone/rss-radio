@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rising Star Spotlight Radio | Discover Emerging Artists</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+    .hero-bg { background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.95)), url('https://picsum.photos/id/1015/2000/1200') center/cover; }
+    .star-bg { background-image: radial-gradient(circle, rgba(255,215,0,0.15) 1px, transparent 1px); background-size: 40px 40px; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-white font-['Inter'] overflow-x-hidden star-bg">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-amber-500/20">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <img src="logo.png" alt="Rising Star Spotlight Radio" class="h-12 w-auto">
+      </div>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#home" class="hover:text-amber-400 transition">Home</a>
+        <a href="#about" class="hover:text-amber-400 transition">About</a>
+        <a href="#for-artists" class="hover:text-amber-400 transition">For Artists</a>
+        <a href="#bundles" class="hover:text-amber-400 transition">Bundles</a>
+        <a href="#listen" class="hover:text-amber-400 transition">Listen Live</a>
+        <a href="#submit" class="hover:text-amber-400 transition">Submit Music</a>
+      </div>
+      <button onclick="toggleMobileMenu()" class="md:hidden text-3xl">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-zinc-900 py-6 border-t border-zinc-800">
+      <div class="flex flex-col gap-6 text-center text-lg font-medium">
+        <a href="#home" onclick="toggleMobileMenu()" class="hover:text-amber-400">Home</a>
+        <a href="#about" onclick="toggleMobileMenu()" class="hover:text-amber-400">About</a>
+        <a href="#for-artists" onclick="toggleMobileMenu()" class="hover:text-amber-400">For Artists</a>
+        <a href="#bundles" onclick="toggleMobileMenu()" class="hover:text-amber-400">Bundles</a>
+        <a href="#listen" onclick="toggleMobileMenu()" class="hover:text-amber-400">Listen Live</a>
+        <a href="#submit" onclick="toggleMobileMenu()" class="hover:text-amber-400">Submit Music</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero-bg min-h-screen flex items-center pt-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <img src="logo.png" alt="Rising Star Spotlight Radio" class="mx-auto h-32 mb-8 drop-shadow-2xl">
+      <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6">
+        Where <span class="bg-gradient-to-r from-amber-400 to-blue-400 bg-clip-text text-transparent">Rising Stars</span> Shine
+      </h1>
+      <p class="text-xl md:text-2xl text-zinc-300 max-w-2xl mx-auto mb-10">
+        Independent online radio giving emerging artists the global spotlight they deserve.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#listen" class="bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-600 hover:to-yellow-600 text-black font-semibold py-4 px-10 rounded-full text-lg inline-flex items-center gap-3 justify-center transition">
+          <i class="fa-solid fa-play"></i> LISTEN LIVE NOW
+        </a>
+        <a href="#bundles" class="border border-white/60 hover:border-white hover:bg-white/10 py-4 px-10 rounded-full text-lg font-medium transition">
+          Buy a Bundle
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION / ABOUT -->
+  <section id="about" class="py-24 bg-zinc-900">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">Our Mission</h2>
+      <div class="prose prose-invert max-w-none text-lg leading-relaxed text-zinc-300">
+        <p>Rising Star Spotlight Radio is an independent online radio platform dedicated to supporting and promoting emerging and independent artists from around the world.</p>
+        <p>Our mission is to provide talented musicians with the exposure they deserve through quality airplay, artist spotlight features, interviews, and targeted promotional campaigns.</p>
+        <p>Through our growing network of listeners, music curators, and industry connections, we help artists expand their reach, connect with new audiences, and build stronger visibility for their music.</p>
+        <p class="font-semibold text-amber-400 mt-8 text-center">We believe every great artist deserves a platform where their sound can be discovered and appreciated.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE OFFER -->
+  <section id="for-artists" class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-16">What We Offer</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-zinc-900 p-8 rounded-3xl border border-amber-500/10 hover:border-amber-400 transition group">
+          <div class="w-14 h-14 bg-amber-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+            <i class="fa-solid fa-radio text-3xl text-amber-400"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3">Quality Airplay</h3>
+          <p class="text-zinc-400">Professional rotation on our global 24/7 online radio station</p>
+        </div>
+        <div class="bg-zinc-900 p-8 rounded-3xl border border-amber-500/10 hover:border-amber-400 transition group">
+          <div class="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+            <i class="fa-solid fa-star text-3xl text-blue-400"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3">Artist Spotlight Features</h3>
+          <p class="text-zinc-400">Dedicated shows and social promotion that put your music front & center</p>
+        </div>
+        <div class="bg-zinc-900 p-8 rounded-3xl border border-amber-500/10 hover:border-amber-400 transition group">
+          <div class="w-14 h-14 bg-emerald-500/10 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+            <i class="fa-solid fa-microphone text-3xl text-emerald-400"></i>
+          </div>
+          <h3 class="text-2xl font-semibold mb-3">In-Depth Interviews</h3>
+          <p class="text-zinc-400">Professional conversations to share your story with thousands of listeners</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUNDLES & PAYMENTS -->
+  <section id="bundles" class="py-24 bg-zinc-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-4">Bundles & Support Packages</h2>
+      <p class="text-center text-zinc-400 mb-12">Choose a package to support an artist. Secure payments: PayPal • Credit/Debit Card • Cryptocurrency</p>
+      
+      <!-- Editable Packages JSON - Change prices, names, descriptions here only -->
+      <script id="packagesData" type="application/json">
+        [
+          {
+            "name": "Basic Airplay",
+            "price": "29",
+            "desc": "3 tracks in rotation for 30 days + 1 social media shoutout",
+            "paypal": "https://www.paypal.com/paypalme/yourusername/29",
+            "card": "#",
+            "crypto": "https://nowpayments.io/payment?amount=29&currency=USD"
+          },
+          {
+            "name": "Spotlight Package",
+            "price": "99",
+            "desc": "Full artist interview + dedicated 1-hour feature + promo across all platforms",
+            "paypal": "https://www.paypal.com/paypalme/yourusername/99",
+            "card": "#",
+            "crypto": "https://nowpayments.io/payment?amount=99&currency=USD"
+          },
+          {
+            "name": "Premium Promo",
+            "price": "249",
+            "desc": "Everything in Spotlight + targeted ad campaign + industry connections",
+            "paypal": "https://www.paypal.com/paypalme/yourusername/249",
+            "card": "#",
+            "crypto": "https://nowpayments.io/payment?amount=249&currency=USD"
+          }
+        ]
+      </script>
+
+      <div class="grid md:grid-cols-3 gap-8" id="packagesGrid"></div>
+    </div>
+  </section>
+
+  <!-- LIVE RADIO PLAYER -->
+  <section id="listen" class="py-24 bg-black">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold mb-4">Listen Live</h2>
+      <p class="text-zinc-400 mb-10">24/7 music discovery • Independent artists only</p>
+      
+      <div class="bg-zinc-900 rounded-3xl p-10 border border-amber-400/30 shadow-2xl">
+        <div class="flex items-center justify-center gap-6 mb-8">
+          <div class="w-20 h-20 bg-gradient-to-br from-amber-400 to-blue-500 rounded-2xl flex items-center justify-center">
+            <i class="fa-solid fa-music text-4xl text-black"></i>
+          </div>
+          <div class="text-left">
+            <p class="text-sm text-amber-400 font-medium">NOW PLAYING</p>
+            <p id="nowPlaying" class="text-2xl font-semibold">Rising Star Spotlight Radio</p>
+            <p class="text-zinc-500 text-sm">RSSR • Global</p>
+          </div>
+        </div>
+
+        <audio id="radioPlayer" class="w-full" controls>
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+
+        <div class="mt-8 text-xs text-zinc-500 flex justify-center gap-8">
+          <div>📡 Live Stream</div>
+          <div>🎧 Worldwide</div>
+          <div>🔥 100% Independent</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBMIT MUSIC -->
+  <section id="submit" class="py-24 bg-zinc-900">
+    <div class="max-w-2xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-4">Submit Your Music</h2>
+      <p class="text-center text-zinc-400 mb-12">Get your track on air + spotlight feature</p>
+      
+      <form id="submitForm" class="space-y-6">
+        <div class="grid md:grid-cols-2 gap-6">
+          <input type="text" id="name" placeholder="Your Name" required class="bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-amber-400">
+          <input type="text" id="artist" placeholder="Artist / Band Name" required class="bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-amber-400">
+        </div>
+        <input type="email" id="email" placeholder="Email Address" required class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-amber-400">
+        <input type="url" id="songLink" placeholder="Song Link (SoundCloud, Spotify, YouTube, etc.)" required class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-amber-400">
+        <select id="genre" required class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-amber-400">
+          <option value="">Select Genre</option>
+          <option>Pop</option><option>Hip-Hop</option><option>R&amp;B</option><option>Electronic</option><option>Indie</option><option>Rock</option><option>Alternative</option><option>Other</option>
+        </select>
+        <textarea id="message" rows="4" placeholder="Tell us about your music / story (optional)" class="w-full bg-zinc-800 border border-zinc-700 rounded-2xl px-6 py-4 focus:outline-none focus:border-amber-400"></textarea>
+        
+        <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-blue-500 hover:from-amber-600 hover:to-blue-600 text-black font-bold py-5 rounded-2xl text-lg transition">
+          SEND SUBMISSION
+        </button>
+      </form>
+      
+      <div id="successMessage" class="hidden mt-8 text-center bg-green-900/50 border border-green-400 text-green-300 p-6 rounded-3xl">
+        🎉 Thank you! Your submission has been received. We'll review it within 48 hours.
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black py-16 border-t border-zinc-800">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+        <div class="flex items-center gap-3">
+          <img src="logo.png" alt="RSSR" class="h-10">
+          <div>
+            <p class="font-semibold">Rising Star Spotlight Radio</p>
+            <p class="text-xs text-zinc-500">RSSR © 2026</p>
+          </div>
+        </div>
+        <div class="flex gap-8 text-sm">
+          <a href="#" class="hover:text-amber-400">Instagram</a>
+          <a href="#" class="hover:text-amber-400">TikTok</a>
+          <a href="#" class="hover:text-amber-400">Twitter/X</a>
+          <a href="#" class="hover:text-amber-400">Contact</a>
+        </div>
+      </div>
+      <div class="text-center text-zinc-500 text-xs mt-16">
+        Independent. Passionate. Built for artists.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Tailwind already loaded
+    function toggleMobileMenu() {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    }
+
+    // Render Packages
+    function renderPackages() {
+      const data = JSON.parse(document.getElementById('packagesData').textContent);
+      const grid = document.getElementById('packagesGrid');
+      grid.innerHTML = '';
+      
+      data.forEach(pkg => {
+        const card = document.createElement('div');
+        card.className = 'bg-zinc-800 p-8 rounded-3xl border border-amber-500/20 hover:border-amber-400 transition flex flex-col';
+        card.innerHTML = `
+          <h3 class="text-2xl font-bold mb-2">${pkg.name}</h3>
+          <div class="text-5xl font-bold text-amber-400 mb-6">$${pkg.price}</div>
+          <p class="text-zinc-400 mb-8 flex-1">${pkg.desc}</p>
+          <div class="flex flex-col gap-3">
+            <a href="${pkg.paypal}" target="_blank" class="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-2xl font-medium transition">
+              <i class="fa-brands fa-paypal"></i> Pay with PayPal
+            </a>
+            <a href="${pkg.card}" onclick="alert('Stripe checkout integration coming soon - contact admin to activate card payments')" class="flex items-center justify-center gap-2 bg-zinc-700 hover:bg-zinc-600 text-white py-3 rounded-2xl font-medium transition">
+              <i class="fa-solid fa-credit-card"></i> Pay with Card
+            </a>
+            <a href="${pkg.crypto}" target="_blank" class="flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white py-3 rounded-2xl font-medium transition">
+              <i class="fa-solid fa-coins"></i> Pay with Crypto
+            </a>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    // Form handling
+    document.getElementById('submitForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      this.classList.add('hidden');
+      document.getElementById('successMessage').classList.remove('hidden');
+      setTimeout(() => {
+        this.reset();
+        this.classList.remove('hidden');
+        document.getElementById('successMessage').classList.add('hidden');
+      }, 5000);
+    });
+
+    // Initialize
+    window.onload = () => {
+      renderPackages();
+      const audio = document.getElementById('radioPlayer');
+      if (audio) audio.volume = 0.7;
+    };
+  </script>
+</body>
+</html>
